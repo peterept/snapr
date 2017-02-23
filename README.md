@@ -2,6 +2,9 @@
 
 [![Build Status](https://travis-ci.org/peterept/snapr.svg?branch=master)](https://travis-ci.org/peterept/snapr)
 
+Snap and send a selfie directly from the terminal to everyone watching in your network.
+
+![Imgur](http://i.imgur.com/sa9GvzPm.png)
 
 To download this application use:
 
