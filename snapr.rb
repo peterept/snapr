@@ -7,7 +7,7 @@ if ARGV[0] == "-watch"
 elsif ARGV[0].nil?
 	puts "Snapr - Share a webcam photo and message!\n" \
 	     "Usage:\n" \
-	     "  Send a message:       $ ruby snapr.rb \"You're Message in Quotes\"\n" \
+	     "  Send a message:       $ ruby snapr.rb \"Your Message in Quotes\"\n" \
 	     "  Live message display: $ ruby snapr.rb -watch"
 else
 
