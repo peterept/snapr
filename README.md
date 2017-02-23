@@ -1,5 +1,8 @@
 ## Snapr - Social photo messaging from the terminal
 
+[![Build Status](https://travis-ci.org/peterept/snapr.svg?branch=master)](https://travis-ci.org/peterept/snapr)
+
+
 To download this application use:
 
    ```
