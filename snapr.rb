@@ -10,5 +10,6 @@ elsif ARGV[0].nil?
 	     "  Send a message:       $ ruby snapr.rb \"You're Message in Quotes\"\n" \
 	     "  Live message display: $ ruby snapr.rb -watch"
 else
+
 	SnaprRunner.send ARGV[0], ENV['USER']
 end

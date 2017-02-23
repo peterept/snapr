@@ -1,6 +1,7 @@
 require 'lolcommits'
 require 'catpix'
 require 'io/console'
+require_relative "snapr_message"
 require_relative 'snapr_receiver'
 require_relative 'snapr_sender'
 
@@ -70,8 +71,9 @@ class SnaprRunner
 
     # Broadcast the image on the network
     puts "Sending Image '#{filename}'..."
-    SnaprSender.send(Catpix.raw_img)
-    puts "Done"
+    msg = SnaprMessage.new(Catpix.raw_img)
+    SnaprSender.send(msg)
+    puts "Done. Support https://youthoffthestreets.com.au"
   end
 end
 

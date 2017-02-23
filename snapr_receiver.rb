@@ -1,6 +1,7 @@
 require "socket"
 require "ipaddr"
 require "zlib"
+require_relative "snapr_message"
 
 class SnaprReceiver
 
@@ -21,7 +22,8 @@ class SnaprReceiver
 		loop do
 		  message, _ = socket.recvfrom(65000)
     	  system('clear')
-		  puts Zlib::Inflate.inflate(message)
+    	  msg = SnaprMessage.decode_from_ascii(message)
+    	  puts msg.message
 		  # keep the image up for atleast 5 seconds
 		  sleep 5
 		end
