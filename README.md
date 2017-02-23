@@ -25,7 +25,7 @@ To download this application use:
     ```
     brew link --force imagemagick@6
     ```
-3. Install RMargick gem
+3. Install RMagick gem
 
     ```
     gem install rmagick    
